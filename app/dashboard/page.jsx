@@ -1,36 +1,11 @@
-"use client";
-import {
-  SignIn,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-  UserProfile,
-  useUser,
-} from "@clerk/nextjs";
 import React from "react";
 
-const dashBoard = () => {
-  const { isLoaded, isSignedIn, user } = useUser();
-
+const Dashboard = () => {
   return (
-    <div>
-      {user ? (
-        <>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-
-          {/* <UserProfile /> */}
-          <SignedOut>
-            <SignInButton />
-          </SignedOut>
-        </>
-      ) : (
-        <SignIn />
-      )}
+    <div >
+      <h1 className=" w-[15%] m-auto  mt-64"> Welcome to Dashboard</h1>
     </div>
   );
 };
 
-export default dashBoard;
+export default Dashboard;
