@@ -6,7 +6,7 @@ const CreateMember = () => {
   const { user, isLoaded } = useUser();
   return (
     <div className="w-full flex h-screen item-center justify-center">
-      {user ? <CreateOrganization /> : <h1>Loading.......</h1>}
+      {user ? <CreateOrganization/> : <h1>Loading.......</h1>}
     </div>
   );
 };

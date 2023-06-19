@@ -15,6 +15,7 @@ import React from "react";
 
 const NavBar = () => {
   const { isLoaded, user } = useUser();
+  console.log(user);
   return (
     <div>
       <Box>
@@ -28,7 +29,7 @@ const NavBar = () => {
                 href="/create-organization"
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                Create Profile
+                Add Member
               </Button>
               <Button
                 href="/organization-profile"
